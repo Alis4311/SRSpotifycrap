@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SR SPOTIFY</title>
+<meta charset="UTF-8">
+</head>
+
+<style>
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+</style>
+
+<body>
+    <h1>SR SPOTIFY</h1>
+<button class="accordion">P1</button>
+<div class="panel">
+    <button class="button1"  onclick = "getStationInfo(132, cs1, ps1)">Uppdatera</button>
+  <p id=cs1>Current Song:</p>
+  <p id =ps1>Previous Song: </p>
+</div>
+
+<button class="accordion">P2</button>
+<div class="panel">
+     <button class="button2" onclick = "getStationInfo(163, cs2, ps2)">Uppdatera</button>
+  <p id = cs2>Current Song:</p>
+  <p id = ps2>Previous Song: </p>
+</div>
+
+<button class="accordion">P3</button>
+<div class="panel">
+      <button class="button3" onclick = "getStationInfo(164, cs3, ps3)">Uppdatera</button>
+  <p id = cs3>Current Song:</p>
+  <p id = ps3>Previous Song: </p>
+</div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="script.js"></script>
+
+
+
+</body>
+<footer>
+  <p>Powered by <a href="http://api.sr.se/api/v2/">Sveriges Radio AB</a> and <a href="https://api.spotify.com/v1/">Spotify</a>. </p>
+</footer>
+</html>
